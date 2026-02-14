@@ -34,12 +34,12 @@ Download SDL3 development libraries from the official SDL website.
 ## Building
 
 ```bash
-gcc snake.c -o snake $(sdl3-config --cflags --libs)
+gcc pong.c -o pong $(sdl3-config --cflags --libs) -lm
 ```
 
 Or with pkg-config:
 ```bash
-gcc snake.c -o snake $(pkg-config --cflags --libs sdl3)
+gcc pong.c -o pong $(pkg-config --cflags --libs sdl3) -lm
 ```
 
 ## Controls
